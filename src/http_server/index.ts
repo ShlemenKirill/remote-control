@@ -13,7 +13,6 @@ export const httpServer = createServer(async (req, res) => {
 		res.writeHead(200, {
 			'Content-Type': 'text/html; charset=utf-8',
 		});
-
 		await pipeline(rs, res);
 	} catch (error) {
 		res.writeHead(404, { 'Content-Type': 'application/json' });
