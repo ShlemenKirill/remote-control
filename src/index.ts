@@ -2,7 +2,7 @@ import { httpServer } from './http_server';
 import commandsParser from './helpers/commandsParcer';
 import { WebSocketServer, createWebSocketStream } from 'ws';
 
-const HTTP_PORT = 3000;
+const HTTP_PORT = 8081;
 const WS_PORT = 8080;
 const wss = new WebSocketServer({ port: WS_PORT });
 
